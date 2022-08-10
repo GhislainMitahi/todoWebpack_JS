@@ -1,15 +1,51 @@
-import _ from 'lodash';
 import './style.css';
-import Icon from './icon.png';
 
- function component() {
-   const element = document.createElement('div');
+const listContents = document.querySelector('.listContents');
 
-   // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const data = [
+  {
+    descript: 'ghislain Developer',
+    completed: true,
+    index: 0,
+  },
+  {
+    descript: 'Mitahi hacker',
+    completed: true,
+    index: 1,
+  },
+  {
+    descript: 'zazu security',
+    completed: true,
+    index: 2,
+  },
+];
 
-   return element;
- }
+const list = document.createElement('ul');
+data.forEach((element) => {
+  const li = document.createElement('li');
+  const checkBox = document.createElement('input');
+  const p = document.createElement('p');
+  const i = document.createElement('i');
+  const label = document.createElement('label');
 
- document.body.appendChild(component());
+  checkBox.type = 'checkbox';
+  checkBox.id = 'scales';
+  checkBox.name = 'scales';
+  checkBox.checked = false;
+
+  p.classList.add('paragraph');
+  label.for = 'scales';
+  label.innerHTML = element.descript;
+
+  i.classList.add('fa-solid', 'fa-info');
+
+  p.appendChild(checkBox);
+  p.appendChild(label);
+  li.appendChild(p);
+  li.appendChild(i);
+  li.classList.add('task');
+
+  list.appendChild(li);
+});
+
+listContents.appendChild(list);
