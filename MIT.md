@@ -1,4 +1,4 @@
-## Copyright 2022, [Onate Makoji]
+## Copyright 2022, [Ghislain Mitahi]
 
 ###### Please delete this line and the next one
 ###### WEBPACK-INTRO can be a webpage/website, a web app, a software and so on
