@@ -4,17 +4,17 @@ const listContents = document.querySelector('.listContents');
 
 const data = [
   {
-    descript: 'ghislain Developer',
+    description: 'ghislain Developer',
     completed: true,
     index: 0,
   },
   {
-    descript: 'Mitahi hacker',
+    description: 'Mitahi hacker',
     completed: true,
     index: 1,
   },
   {
-    descript: 'zazu security',
+    description: 'zazu security',
     completed: true,
     index: 2,
   },
@@ -35,7 +35,7 @@ data.forEach((element) => {
 
   p.classList.add('paragraph');
   label.for = 'scales';
-  label.innerHTML = element.descript;
+  label.innerHTML = element.description;
 
   i.classList.add('fa-solid', 'fa-info');
 
