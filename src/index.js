@@ -1,33 +1,35 @@
 import './style.css';
+import {
+  tasks,
+  addTask,
+  editTask,
+} from './handleTask.js';
 
 const listContents = document.querySelector('.listContents');
+const refresh = document.getElementById('refresh');
+const submit = document.querySelector('.submit');
+const formData = document.getElementById('text');
 
-const data = [
-  {
-    description: 'ghislain Developer',
-    completed: true,
-    index: 0,
-  },
-  {
-    description: 'Mitahi hacker',
-    completed: true,
-    index: 1,
-  },
-  {
-    description: 'zazu security',
-    completed: true,
-    index: 2,
-  },
-];
+refresh.addEventListener('click', () => {
+  document.location.reload();
+});
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  const data = formData.value;
+  addTask(data);
+});
 
 const list = document.createElement('ul');
-data.forEach((element) => {
+tasks.forEach((element) => {
   const li = document.createElement('li');
   const checkBox = document.createElement('input');
   const p = document.createElement('p');
   const i = document.createElement('i');
   const label = document.createElement('label');
 
+  li.setAttribute('id', element.index);
+  li.classList.add('item');
   checkBox.type = 'checkbox';
   checkBox.id = 'scales';
   checkBox.name = 'scales';
@@ -38,14 +40,15 @@ data.forEach((element) => {
   label.innerHTML = element.description;
 
   i.classList.add('fa-solid', 'fa-info');
+  i.addEventListener('click', () => {
+    editTask(element.index);
+  });
 
-  p.appendChild(checkBox);
-  p.appendChild(label);
-  li.appendChild(p);
-  li.appendChild(i);
+  p.append(checkBox, label);
+  li.append(p, i);
   li.classList.add('task');
 
-  list.appendChild(li);
+  list.append(li);
 });
 
 listContents.appendChild(list);
