@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Todo</title>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Asset Management</title>
-
-        <script src="bundle.js"></script>
-    </head>
-
-    <body>
-        <p class="ghis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsa iste voluptate? Quisquam
-            aut, repellat deserunt libero ipsa, dolorem, eum accusantium explicabo exercitationem totam quos aperiam cum
-            unde quibusdam quas molestiae. Neque quod deserunt maxime temporibus veritatis natus expedita velit est
-            officia cumque, dicta itaque asperiores quis nulla, tenetur aperiam enim beatae impedit recusandae a! Fuga
-            eius temporibus deserunt repellendus, provident reprehenderit accusamus voluptate non. Doloribus incidunt,
-            commodi eum consequatur error doloremque eius at, enim, eligendi rem quae. Saepe nesciunt odit aperiam ex
-            voluptatum sed rerum, quasi modi sunt minus asperiores accusamus error quidem mollitia, harum, placeat nulla
-            nihil quas.</p>
-    </body>
-
+    <script src="bundle.js"></script>
+</head>
+<body>
+    <div class="content">
+        <header class="header">
+            <h2>h1</h2>
+            <p class="title">Today's To Do</p>
+            <p id="refresh"><i class="fa-solid fa-rotate"></i></p>
+        </header>
+        <section class="listContents">
+            <h2>h1</h2>
+            <div class="getData">
+                <input id="field" type="text" placeholder="Add to your list ...">
+                <i class="fa-solid fa-check"></i>
+            </div>
+        </section>
+        <footer id="footer">
+             <button type="button" class="btn">
+                Clear all comleted
+             </button>
+        </footer>
+    </div>
+</body>
 </html>

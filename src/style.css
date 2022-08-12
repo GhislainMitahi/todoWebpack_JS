@@ -1,24 +1,140 @@
-
 @font-face {
   font-family: 'MyFont';
-  src: url('./my-font.woff2') format('woff2'),
+  src:
+    url('./my-font.woff2') format('woff2'),
     url('./my-font.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-color: bisque;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.hello {
-    color :brown;
-     font-family: 'MyFont';
-     font-weight: 500;
-     background: url('./icon.png');
+.content {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: auto;
+  width: 40%;
+  box-shadow: 2px 2px 8px #d0cece;
 }
 
-.ghis{
-  color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 63px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid rgb(207, 205, 205);
 }
 
+.fa-solid.fa-rotate,
+.fa-solid.fa-check,
+.fa-solid.fa-info {
+  color: rgb(124, 123, 123);
+}
+
+.title {
+  font-size: 20px;
+  word-spacing: 5px;
+  font-weight: 600px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 700px;
+}
+
+#scales {
+  width: 20px;
+  height: 20px;
+}
+
+h2 {
+  display: none;
+}
+
+::placeholder {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.getData {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid rgb(207, 205, 205);
+}
+
+.paragraph {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+
+#field {
+  width: 95%;
+  height: 100%;
+  border: none;
+  padding-left: 5px;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(124, 123, 123);
+  word-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+#field:focus {
+  outline: none;
+  border: none;
+}
+
+.listContents {
+  height: auto;
+}
+
+.task {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  border-bottom: 2px solid rgb(207, 205, 205);
+  padding-right: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: rgb(244, 243, 243);
+}
+
+.btn {
+  color: gray;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+  border: none;
+}
