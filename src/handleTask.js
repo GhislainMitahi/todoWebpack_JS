@@ -25,6 +25,16 @@ const removeTask = (index) => {
   document.location.reload();
 };
 
+export const removeAllChecked = () => {
+  let updatedTasks = tasks.filter((task) => task.completed !== true);
+  updatedTasks = updatedTasks.map((task, index) => {
+    task.index = index + 1;
+    return task;
+  });
+  localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+  document.location.reload();
+};
+
 const updateTask = (index, inputEdit) => {
   const newTasks = tasks.filter((item) => item.index !== index);
 
