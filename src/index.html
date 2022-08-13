@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
 
     <script src="bundle.js"></script>
 </head>
+
 <body>
     <div class="content">
         <header class="header">
@@ -18,16 +20,17 @@
         </header>
         <section class="listContents">
             <h2>h1</h2>
-            <div class="getData">
-                <input id="field" type="text" placeholder="Add to your list ...">
-                <i class="fa-solid fa-check"></i>
-            </div>
+            <form class="getData" action="#">
+                <input id="text" type="text" placeholder="Add to your list ...">
+                <button type="submit" class="submit"><i class="fa-solid fa-check"></i></button>
+            </form>
         </section>
         <footer id="footer">
-             <button type="button" class="btn">
+            <a id="clean" class="clean">
                 Clear all comleted
-             </button>
+             </a>
         </footer>
     </div>
 </body>
+
 </html>
