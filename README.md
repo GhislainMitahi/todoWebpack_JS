@@ -4,6 +4,10 @@
 
 This project is about to give us a handle as a student on how to make interactive a web site.
 
+## Live demo
+
+https://ghislainmitahi.github.io/todoWebpack_JS/dist/
+
 ## Built With
 
 - Html, CSS , JavaScript & Webpack
