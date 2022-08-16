@@ -41,11 +41,11 @@ If you want to use this project locally on your device you will need the followi
 
 ## Authors
 
-👤 **Habib Payenda**
+👤 ## Authors
 
-- GitHub: [@HabibPayenda](https://github.com/githubhandle)
-- Twitter: [@HabibPayenda](https://twitter.com/twitterhandle)
-- LinkedIn: [@HabibPayenda](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@GhislainMitahi](https://github.com/GhislainMitahi)
+- Twitter: [@GMItahi](https://https://twitter.com/GMitahi)
+- LinkedIn: [ghislainmitahi](https://linkedin.com/in/ghislain-mitahi/)
 
 
 ## 🤝 Contributing
